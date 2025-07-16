@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+</head>
+<body>
+
+    <!-- kata jane -->
+    <!-- <form> -->
+
+        <form action="mailto:dipikak0323@gmail.com" method="post" enctype="text/plain">        <!-- <form action="https://www.google.com/"> -->
+
+        <!-- label => for directing user to specific area -->
+        <p>        
+            <label for="user">Username: </label>
+
+            <!-- input value name ma assign vayera jancha -->
+            <!-- username ma value basera url/api ma jancha -->
+            <input type="text" id="user" name="username" placeholder="eg: dipika" required><br><br>
+        </p>
+        <p>
+            <label for="email">Email: </label>
+            <input type="email" name="email"><br><br>
+        </p>
+
+        <!-- checkbox & radio -->
+        <p>
+            <h3>Select your gender:</h3>
+            <label for="male">Male</label>
+            <input type="radio" value="male" id="male" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" value="female" id="female" name="gender">
+        </p>
+        <p>
+            <h3>Select your habits:</h3>
+            <label for="dance">Dance</label>
+            <input type="checkbox" name="habits" value="dance" id="dance">
+            <label for="sing">Sing</label>
+            <input type="checkbox" name="habits" value="sing" id="sing">
+        </p>
+        <p>
+            <label for="country">Select your country: </label>
+
+            <!-- dropdown -->
+            <select name="country" id="country"> 
+                <option value="nepal">Nepal</option>
+                <option value="india">India</option>
+                <option value="china">China</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="message">Tyoe your message:</label>
+            <textarea name="message" id="message" rows="5" cols="30"></textarea>
+        </p>
+
+        <p>
+            <label for="dob">Select Date: </label>
+            <input type="date" name="dob" id="dob">
+        </p>
+
+        
+
+        <button type="submit">submit</button>
+    </form>
+
+    <marquee behavior="" direction="right" width="200px">hi dipika, it's been a while !!!</marquee>
+</body>
+</html>
