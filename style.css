@@ -1,0 +1,52 @@
+p{
+    color: cadetblue;
+}
+
+p:hover{
+    color: blueviolet;
+}
+.box1 p{
+    color: blue;
+}
+
+/* #header{
+    color: aqua;
+} */
+
+#header h1{
+    color: pink;
+}
+
+#header h2{
+    color: pink;
+}
+
+li:nth-child(even){
+    color: pink;
+}
+
+/* direct child */
+.bx>h2{
+    color: brown;
+}
+
+.bx2 h2{
+    color: goldenrod;
+}
+
+/* attribute */
+input[type='text']{
+    background-color: lime;
+}
+
+img[alt='img1']{
+    height: 200px;
+    width: 500px;
+    border-radius: 40px 10px;
+}
+img[alt='img2']{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: fill;
+}
