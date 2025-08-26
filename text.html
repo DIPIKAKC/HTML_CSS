@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+
+    <style>
+
+        /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+
+            /* jati size deko cha teaima kaam garos, default sizes harule garda nabadhaos bhanera */
+            box-sizing: border-box;
+        }
+
+        h1{
+            /* color: #748DAE;
+            color: rgb(200, 100, 200); */
+            color: rgba(100, 100, 100, 0.333);
+            /* text-align: center;  */
+        }
+
+        p{
+            text-align: center;
+            /* text-transform: capitalize;
+            letter-spacing: 20px;
+            word-spacing: 40px; */
+            line-height: 30px;
+            font-size: 20px;
+            /* 1 rem = 16px, browsers default size, helps make responsive to browser */
+            /* em le chaiparent ko respective ma size lincha, aaba p le system ko haina div ko 20 px lincha */
+        }
+
+        .bx{
+
+        }
+
+        .bx2 p{
+            font-weight: bolder;
+            text-decoration: underline 2px black;
+            /* underline ra text bich ko gap badhcha */
+            text-underline-offset: 5px;
+            font-family: "Noto Sans JP", sans-serif;
+        }
+
+        .bx3{
+            border: 2px solid black;
+            height: 50px;
+            margin: 10px 30px;
+            padding: 10px 10px;
+        }
+
+        .boxes{
+            justify-self: center;
+        }
+        .b1{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            justify-items: end; 
+        }
+        .b1 p::after{
+                    content: ' \2639';
+                        font-size: 300px;
+
+        }
+        .b2{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            margin-left: 200px;
+        }
+        .b3{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            margin-left: 400px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>HI dipika</h1>
+    <div class="bx">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam perspiciatis impedit veritatis magnam velit incidunt aperiam perferendis tempore ab exercitationem quisquam earum, nulla quasi eos cupiditate et aliquid labore fuga!</p>
+    </div>
+
+    <div class="bx2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores temporibus quaerat iusto quidem porro necessitatibus quas tenetur minima, maxime ab, voluptatum delectus sunt voluptates ratione, perferendis dolor facilis deserunt. Maiores!</p>
+    </div>
+
+    <!-- box model- html ko sabai element box ma huncha -->
+     <div class="bx3">
+        <h3>okokoks</h3>
+     </div>
+
+     <div class="boxes">
+
+         <div class="b1">
+            <p>a</p>
+         </div>
+         <div class="b2"></div>
+         <div class="b3"></div>
+     </div>
+     
+</body>
+</html>

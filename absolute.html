@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* absolute: one on top of other == overlap, body anusar sarcha?? */
+        /* .bx1{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            position: absolute;
+            top: 50px;
+            left: 60px;
+            for priority while overlaping
+            z-index: 1;
+        }
+        .bx2{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(95, 102, 100);
+            position: absolute;
+            z-index: 2;
+            top: 250px;
+            left: 260px;
+        }
+        .bx3{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: 450px;
+            left: 460px;
+        } */
+
+        /* relative: parent anusar chalcha if parent ko position relative and child ko position absolute ste garyacha */
+        /* .bx1{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            position: absolute;
+            top: 50px;
+            left: 60px;
+            position: relative;
+
+        }
+        .bx-b{
+            height: 20px;
+            width: 20px;
+            background-color: rgb(95, 102, 100);
+            position: absolute;
+            bottom: 0;
+        } */
+
+        .bx2{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            z-index: 1;
+        }
+        .bx3{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: 160px;
+            left: 160px;
+            z-index: 2;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="bx1">
+        <div  class="bx-b"></div>
+    </div>
+    
+    <div class="bx2"></div>
+    <div class="bx3"></div>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. A eveniet distinctio quasi ullam? Ullam molestiae sit consequatur sint, odio placeat rerum nostrum iste debitis assumenda ratione blanditiis repellat dolores error.
+    </p>
+    
+</body>
+</html>

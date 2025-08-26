@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        background-color: black;
+        height: 420px;
+        width: 300px;
+        justify-self: center;
+        justify-items: center;
+        margin-top: 50px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .screen{
+        height: 60px;
+        color: white;
+        font-size:xx-large;
+        margin-left: 210px;
+    }
+
+    .top{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .bttm{
+        margin-top: 10px;
+        display: flex;
+        gap: 33px;
+        
+
+    }
+
+    .dark{
+        background-color: rgb(69, 69, 69);
+        border-radius: 100%;
+        height: fit-content;
+        width: fit-content;
+        padding: 15px;
+        align-content: center; 
+        font-weight: bold;
+        font-size: larger;
+        color: white;
+    }
+    .dark-zero{
+        background-color: rgb(69, 69, 69);
+        border-radius: 20px;
+        height: fit-content;
+        width: 100px;
+        padding: 15px;
+        align-content: center;
+        font-size: larger;
+        color: white; 
+    }
+    .gray{
+        background-color: gray;
+        border-radius: 100%;
+        height: fit-content;
+        width: fit-content;
+        padding: 15px;
+        align-content: center; 
+        color: white;
+    }
+    .orange{
+        background-color: orange;
+        border-radius: 100%;
+        height: fit-content;
+        width: fit-content;
+        padding: 15px;
+        align-content: center; 
+        font-size: larger;
+        color: white;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+
+</style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="main">
+        <div class="screen">3</div>
+        <div class="buttons">
+                
+            <div class="top">
+
+                <button class="gray">AC</button>
+                <button class="gray">DEL</button>
+                <button class="gray">%</button>
+                <button class="orange">/</button>
+
+                <button class="dark">7</button>
+                <button class="dark">8</button>
+                <button class="dark">9</button>
+                <button class="orange">*</button>
+                <button class="dark">4</button>
+                <button class="dark">5</button>
+                <button class="dark">6</button>
+                <button class="orange">-</button>
+                <button class="dark">1</button>
+                <button class="dark">2</button>
+                <button class="dark">3</button>
+                <button class="orange">+</button>
+            </div>
+
+            <div class="bttm">
+
+                <button class="dark-zero">0</button>
+                <button class="dark">.</button>
+                <button class="orange">=</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <style>
+    body {
+      background-color: #87CEEB;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .calculator {
+      background-color: black;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px #000;
+      width: 220px;
+    }
+
+    .display {
+      background: black;
+      color: white;
+      font-size: 2em;
+      text-align: right;
+      padding: 10px;
+      border: none;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    button {
+      padding: 15px;
+      border: none;
+      border-radius: 50%;
+      font-size: 1em;
+      cursor: pointer;
+      color: white;
+    }
+
+    .gray { background-color: #a5a5a5; color: black; }
+    .dark { background-color: #333333; }
+    .orange { background-color: orange; }
+    .zero {
+      grid-column: span 2;
+      border-radius: 30px;
+      text-align: left;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calculator">
+    <div class="display">4</div>
+    <div class="buttons">
+      <button class="gray">AC</button>
+      <button class="gray">DEL</button>
+      <button class="gray">%</button>
+      <button class="orange">/</button>
+
+      <button class="dark">7</button>
+      <button class="dark">8</button>
+      <button class="dark">9</button>
+      <button class="orange">*</button>
+
+      <button class="dark">4</button>
+      <button class="dark">5</button>
+      <button class="dark">6</button>
+      <button class="orange">-</button>
+
+      <button class="dark">1</button>
+      <button class="dark">2</button>
+      <button class="dark">3</button>
+      <button class="orange">+</button>
+
+      <button class="dark zero">0</button>
+      <button class="dark">.</button>
+      <button class="orange">=</button>
+    </div>
+  </div>
+
+</body>
+</html> -->

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+
+    <style>
+        .main{
+            height: 480px;
+            width: 800px;
+            /*  for center */
+            margin: 0 auto;
+            position: relative;
+            background-color: antiquewhite;
+            z-index: 1;
+            box-shadow: 5px 5px 8px 0px antiquewhite, 10px 10px 10px 0 rgb(169, 169, 169);
+        }
+        img{
+            position: absolute;
+            height: 100%;
+            width: 60%;
+        }
+        .info{
+            position: absolute;
+            height: 100%;
+            left: 60%;
+            padding: 15px;
+        }
+
+        .author{
+            display: flex;
+            justify-items: center;
+            gap: 5px;
+            align-items: center;
+        }
+        .profile{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: gray;
+        }
+
+        p{
+            display: inline;
+        }
+        h1{
+            margin-top: 0;
+        }
+
+        .top{
+            display: flex;
+            gap: 20px;
+            color: brown;
+            margin: 0;
+        }
+
+        .text>em{
+            /* font-style: italic; */
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="https://images.unsplash.com/photo-1752035680973-79d3836f317a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE5fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="">
+
+        <div class="info">
+            <div class="top">
+                
+                <p><strong>VISIT</strong></p>
+                <p><strong>EXPLORE</strong></p>
+                <p><strong>EXPAND</strong></p>
+            </div>
+            <h1> The Mountain Explorer Course</h1>
+            <p>Mountains. They rise above us like ancient guardians of the earth—beautiful, dangerous, and full of secrets. Learning about mountains isn’t just about geography; it’s about understanding the forces that shaped our planet, the ecosystems that thrive in extreme conditions, and the cultures that have lived among the peaks for centuries.
+                <br><br>
+                Whether you're a student, a hiker, or someone who just stares in awe at snow-capped summits, this course invites you to climb higher in your knowledge.
+            </p>
+
+            <div class="author">
+                <div class="profile"></div>
+                <h3><strong>Dipika K.C. on Jul 21, 2025</strong></h3>
+            </div>
+        </div>
+
+        <div class="text">
+            <em><strong>ON THE TOP</strong><em>
+        </div>
+    </div>
+
+</body>
+</html>
